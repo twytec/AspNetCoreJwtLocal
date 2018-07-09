@@ -11,8 +11,8 @@ namespace ConsoleClient
         {
             Console.WriteLine("Hello World!");
 
-            CreateUser(new SharedModels.ViewModels.RegisterViewModel() { Email = "wycichowski@gmail.com", Password = "Test123!" }).Wait();
-            var token = GetToken(new SharedModels.ViewModels.LoginViewModel() { Email = "wycichowski@gmail.com", Password = "Test123!" }).Result;
+            CreateUser(new SharedModels.ViewModels.RegisterViewModel() { Email = "mymail@mail.com", Password = "Test123!" }).Wait();
+            var token = GetToken(new SharedModels.ViewModels.LoginViewModel() { Email = "mymail@mail.com", Password = "Test123!" }).Result;
             GetUserInfo(token).Wait();
         }
 
